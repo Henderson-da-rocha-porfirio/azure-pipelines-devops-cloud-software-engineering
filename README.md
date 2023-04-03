@@ -37,3 +37,18 @@
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’12”](https://user-images.githubusercontent.com/46926951/229620704-b217c9eb-849e-4018-b6bf-5be0a656da7e.jpg)
 
 ---
+
+## Exemplo prático do funcionamento DevOps entre equipes
+
+### Equipe de Devs (dev) lança um novo produto:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’22”](https://user-images.githubusercontent.com/46926951/229621103-39aa46ff-9e33-4460-a9d3-0b8c68327795.jpg)
+
+---
+
+###  E a equipe de operação(ops) precisa manter o software no ar sem falhas
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’27”](https://user-images.githubusercontent.com/46926951/229621446-d6d5ecba-3ac7-4c95-9e50-71b785eb5f9f.jpg)
+
+
+---
