@@ -52,7 +52,9 @@
 
 ---
 
-## Azure contribuindo no CI (integração contínua) e no CD (deploy contínuo)
+# Azure contribuindo no CI (integração contínua) e no CD (deploy contínuo)
+
+## CI - Integração Contínua
 
 ---
 ### Ajuda no planejamento ( camada de negócio com planejamento, backlog, board, métrica e etc )
@@ -76,9 +78,11 @@
 
 ---
 
-### Realizando testes da aplicação já em homologação ou stage ( camada de testes da aplicação simulando a prod )
+### Realizando testes da aplicação já em homologação ou stage ( camada de testes da aplicação simulando a prod ). Esta fase é o limite entre o Dev e o Ops
 
-![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’48”](https://user-images.githubusercontent.com/46926951/229623499-7a530a0f-1b23-4051-a53a-0cc5b3c2f39b.jpg)
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’30”](https://user-images.githubusercontent.com/46926951/229624476-a2a05cd5-f291-4f27-a720-0a109f6d75c8.jpg)
 
 
 ---
+
