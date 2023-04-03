@@ -19,3 +19,9 @@
 
 
 ---
+
+### Dev => Mudança contínua
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’51”](https://user-images.githubusercontent.com/46926951/229619974-a22ffce2-6be8-40bc-8376-da1ae3fef20f.jpg)
+
+---
