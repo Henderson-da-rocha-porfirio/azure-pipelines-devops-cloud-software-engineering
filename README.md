@@ -4,11 +4,6 @@
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’33”](https://user-images.githubusercontent.com/46926951/229618786-7544479a-00f1-455a-ade2-7b0e12805655.jpg)
 
-
----
-
-![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’19”](https://user-images.githubusercontent.com/46926951/229618573-6321a4eb-8ee8-411e-b926-31cbf43e6813.jpg)
-
 ---
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’19”](https://user-images.githubusercontent.com/46926951/229618413-86fe0d4a-4820-4950-880d-9d6a556931d8.jpg)
@@ -54,35 +49,63 @@
 
 # Azure contribuindo no CI (integração contínua) e no CD (deploy contínuo)
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’19”](https://user-images.githubusercontent.com/46926951/229618573-6321a4eb-8ee8-411e-b926-31cbf43e6813.jpg)
+
+---
+
 ## CI - Integração Contínua
 
 ---
-### Ajuda no planejamento ( camada de negócio com planejamento, backlog, board, métrica e etc )
+### `Artefatos`: - Ajuda no planejamento ( camada de negócio com planejamento, backlog, board, métrica e etc )
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’54”](https://user-images.githubusercontent.com/46926951/229622762-790be4cb-47b5-4469-9708-d565586b0297.jpg)
 
 ---
 
-### Ajuda no desenvolvimento ( camada de desenvolvimento de código com o git e etc )
+### `Repositórios`: Ajuda no desenvolvimento ( camada de desenvolvimento de código com um tipo de versionador similar ao git e etc ). A Microsoft disponibiliza Ide's como nas da imagem que se integram ao Azure.
 
-![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’17”](https://user-images.githubusercontent.com/46926951/229623615-c8bf19e8-aab1-49d5-a049-358dbc41f6ca.jpg)
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’31”](https://user-images.githubusercontent.com/46926951/229627548-bf030e28-45d7-4024-ab98-545b974020f2.jpg)
 
 ---
 
-### Começo da integração com o Build ( camada de testes unitários )
+### `Ambiente de Testes Unitários`: Começo da integração com o Build ( camada de testes unitários )
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’48”](https://user-images.githubusercontent.com/46926951/229623499-7a530a0f-1b23-4051-a53a-0cc5b3c2f39b.jpg)
 
 
 ---
 
----
-
-### Realizando testes da aplicação já em homologação ou stage ( camada de testes da aplicação simulando a prod ). Esta fase é o limite entre o Dev e o Ops
+### `Ambiente de Homologação`: Realizando testes da aplicação já em homologação ( camada de testes da aplicação simulando a prod mas em nível de desenvolvimento, geralmente onde os testers trabalham ). Esta fase é o limite entre o Dev e o Ops
 
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’30”](https://user-images.githubusercontent.com/46926951/229624476-a2a05cd5-f291-4f27-a720-0a109f6d75c8.jpg)
 
+---
+
+#### Selênio pode ser utilizado, caso deseje, para ajudar também nesta camada de testes de automação
+
+![image](https://user-images.githubusercontent.com/46926951/229628145-4a65e5ce-1d9f-4eab-a135-1940b6313c3b.png)
+
 
 ---
+
+## CD - Deploy Contínuo
+
+---
+
+### `Ambiente de Staging`: Implantação (release)- garante a entrega com velocidade e de maneira automática ( camada de staging - ambiente idêntico ao da produção. Algum erro aqui, também estará na produção caso não tenha sido corrigido )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’50”](https://user-images.githubusercontent.com/46926951/229625497-a812a035-5ad8-4efb-b4d9-5f96579cdcea.jpg)
+
+
+---
+
+### `Deploy`: ambiente da produção. Azure também pode fazer uso do docker. ( podendo integrar com o Docker para instanciar containers e também o kubernetes para orquestrar os mesmos )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’07”](https://user-images.githubusercontent.com/46926951/229628562-0435f663-3462-4d5e-8257-7558897be7db.jpg)
+
+
+---
+
+
 
