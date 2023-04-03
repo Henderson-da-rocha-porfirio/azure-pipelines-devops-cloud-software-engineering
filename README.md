@@ -50,5 +50,35 @@
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’27”](https://user-images.githubusercontent.com/46926951/229621446-d6d5ecba-3ac7-4c95-9e50-71b785eb5f9f.jpg)
 
+---
+
+## Azure contribuindo no CI (integração contínua) e no CD (deploy contínuo)
+
+---
+### Ajuda no planejamento ( camada de negócio com planejamento, backlog, board, métrica e etc )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’54”](https://user-images.githubusercontent.com/46926951/229622762-790be4cb-47b5-4469-9708-d565586b0297.jpg)
+
+---
+
+### Ajuda no desenvolvimento ( camada de desenvolvimento de código com o git e etc )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’17”](https://user-images.githubusercontent.com/46926951/229623615-c8bf19e8-aab1-49d5-a049-358dbc41f6ca.jpg)
+
+---
+
+### Começo da integração com o Build ( camada de testes unitários )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’48”](https://user-images.githubusercontent.com/46926951/229623499-7a530a0f-1b23-4051-a53a-0cc5b3c2f39b.jpg)
+
+
+---
+
+---
+
+### Realizando testes da aplicação já em homologação ou stage ( camada de testes da aplicação simulando a prod )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’48”](https://user-images.githubusercontent.com/46926951/229623499-7a530a0f-1b23-4051-a53a-0cc5b3c2f39b.jpg)
+
 
 ---
