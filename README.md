@@ -25,3 +25,15 @@
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’51”](https://user-images.githubusercontent.com/46926951/229619974-a22ffce2-6be8-40bc-8376-da1ae3fef20f.jpg)
 
 ---
+
+## Ops => Estabilidade Contínua
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’04”](https://user-images.githubusercontent.com/46926951/229620459-84d061bb-15d7-497b-9e10-ad6d092b10a5.jpg)
+
+---
+
+## DevOps
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’12”](https://user-images.githubusercontent.com/46926951/229620704-b217c9eb-849e-4018-b6bf-5be0a656da7e.jpg)
+
+---
