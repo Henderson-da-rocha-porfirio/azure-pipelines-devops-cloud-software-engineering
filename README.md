@@ -123,3 +123,12 @@
 ![image](https://user-images.githubusercontent.com/46926951/229629797-972d1752-fdbc-4d8b-ba6a-6bb608cc05f6.png)
 
 ---
+
+
+### Azure DevOps ( Serviços e Servidor )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’50”](https://user-images.githubusercontent.com/46926951/229632362-8ea15dff-f9f4-40b2-93d4-2066ce0d1246.jpg)
+
+
+---
+
