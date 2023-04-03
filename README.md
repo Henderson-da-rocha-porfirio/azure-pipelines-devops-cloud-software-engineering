@@ -178,5 +178,54 @@
 
 ---
 
+## YAML -  acrônimo para YAML Ain't Markup Language.
+
+- Formato de serialização de dados legíveis para seres humanos.
+
+- Ele é o substituto para o .XML
+
+- Vantagem de alterar a configuração da Pipeline sem precisar entrar no Azure DevOps:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’29”](https://user-images.githubusercontent.com/46926951/229637181-6f01b633-1cb7-4762-8195-3c48529a0ccc.jpg)
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’37”](https://user-images.githubusercontent.com/46926951/229637279-a7716b4c-9e17-48ae-bf29-7e884599e42b.jpg)
 
 
+---
+
+### Listas ficam entre colchetes `[]`:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’49”](https://user-images.githubusercontent.com/46926951/229637527-2c24a051-787c-4121-ae35-4cb5faa6c7e6.jpg)
+
+
+---
+
+### Vetores Associados
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’56”](https://user-images.githubusercontent.com/46926951/229637705-f05265cb-abee-4d87-b30e-7390dbc08c9d.jpg)
+
+---
+
+### Comentários
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’13”](https://user-images.githubusercontent.com/46926951/229637876-6b2e7f99-cb56-4379-8dd2-cabf269fb04a.jpg)
+
+---
+
+### YML na raiz do repositório - configuração de pipeline
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’54” (1)](https://user-images.githubusercontent.com/46926951/229638102-3d20da75-7667-4a3f-9224-799c737187d6.jpg)
+
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’00”](https://user-images.githubusercontent.com/46926951/229638245-6d192026-a052-42f3-bd2b-a761bb817a83.jpg)
+
+
+---
+
+### Trigger - opcional ( esse gatilho diz ao pipeline o que ele deve começar a rodar podendo ser acionado manualmente ou automaticamente )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’10”](https://user-images.githubusercontent.com/46926951/229638405-01357997-d6ba-42ec-9e9f-ca1c0f4e121d.jpg)
