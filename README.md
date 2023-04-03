@@ -226,6 +226,52 @@
 
 ---
 
+### Início do Pipeline
+
 ### Trigger - opcional ( esse gatilho diz ao pipeline o que ele deve começar a rodar podendo ser acionado manualmente ou automaticamente )
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’10”](https://user-images.githubusercontent.com/46926951/229638405-01357997-d6ba-42ec-9e9f-ca1c0f4e121d.jpg)
+
+---
+
+
+### Stages do Pipeline ( estágios ) - usado para marcar alguns pontos importantes como a compilação, controle de qualidade e a produção
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’56” (1)](https://user-images.githubusercontent.com/46926951/229638735-37b2afed-810c-4849-8703-f0524c45e7a1.jpg)
+
+
+---
+
+### Dentro dos Stages temos os `Agents Jobs` ou simplesmente os `Agents` ( servidores que vão processar e executar as ações que precisamos na `CI`:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’11”](https://user-images.githubusercontent.com/46926951/229639115-585afea4-ca10-4e1e-8c94-bd0dab15e56e.jpg)
+
+---
+
+### Especificações dos Recursos que ficam dentro dos Agents para a execução do pipeline ( dependsOn ):
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’37”](https://user-images.githubusercontent.com/46926951/229639481-a2d068e4-6850-42ab-a714-61a7571063ab.jpg)
+
+---
+
+### Jobs - Define a sequência de execução de um conjunto de steps
+
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’50” (1)](https://user-images.githubusercontent.com/46926951/229639692-29bed0b1-e6f5-4411-b50b-b9bc4c4f393b.jpg)
+
+
+---
+
+### Templates - podem ser usados dentro do YAML ( evita repetição de configurações )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’08”](https://user-images.githubusercontent.com/46926951/229639871-7920713b-d68d-4f41-b711-2bd589968b8a.jpg)
+
+---
+
+
+### Tasks - ( tarefas que executam uma ação: rodar comando shell, fazer testes unitários ou publicar um artefato )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’28”](https://user-images.githubusercontent.com/46926951/229640095-9d28fddc-f5a2-49ba-8970-a9352a53ba91.jpg)
+
+
+---
