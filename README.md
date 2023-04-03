@@ -180,6 +180,12 @@
 
 ## YAML -  acrônimo para YAML Ain't Markup Language.
 
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’58”](https://user-images.githubusercontent.com/46926951/229640746-75cfcce4-db4b-4256-b6b7-0df1200d6dd5.jpg)
+
+---
+
 - Formato de serialização de dados legíveis para seres humanos.
 
 - Ele é o substituto para o .XML
@@ -276,6 +282,10 @@
 
 ---
 
-### Artefatos
+### Artefatos - coleção de arquivos ou pacotes publicados por uma execução ( o produto do seu código )
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’45”](https://user-images.githubusercontent.com/46926951/229640493-4ba7d54b-cbb0-4398-a15d-20ee4e88afcd.jpg)
+
+
+---
 
