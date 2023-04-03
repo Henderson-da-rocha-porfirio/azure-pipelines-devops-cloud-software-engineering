@@ -107,5 +107,19 @@
 
 ---
 
+### `Operate`: camada de operações em nível de infraestrutura como código
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’32”](https://user-images.githubusercontent.com/46926951/229629332-788b9c30-7295-4ff5-92b9-75b23c66e369.jpg)
 
 
+--- 
+
+###  Integração com o Terraform
+
+
+- Terraform is an open source tool developed and maintained by HashiCorp that has the exact same goal than ARM templates: it helps you to describe your infrastructure, using HCL (HashiCorp Configuration Language) which is more readable than JSON, and then deploy it to Azure. It comes with a set of tools that also help you to manage the state and lifecycle of your deployments, which makes it a bit more advanced than ARM templates. Also, Terraform is not only working with Microsoft Azure, but also with a ton of other providers (the full list is available here). That does not mean that when you write an HCL template for Microsoft Azure, then it can be used to deploy on any other cloud magically. No, that means that you will be able to use the same language and tools to automate the way you deploy a specific infrastructure on any platforms supported by Terraform. Trust me, it’s something big!
+
+
+![image](https://user-images.githubusercontent.com/46926951/229629797-972d1752-fdbc-4d8b-ba6a-6bb608cc05f6.png)
+
+---
