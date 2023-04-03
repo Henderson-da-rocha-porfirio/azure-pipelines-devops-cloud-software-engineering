@@ -125,10 +125,58 @@
 ---
 
 
-### Azure DevOps ( Serviços e Servidor )
+# Azure DevOps ( Serviços e Recursos )
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’50”](https://user-images.githubusercontent.com/46926951/229632362-8ea15dff-f9f4-40b2-93d4-2066ce0d1246.jpg)
 
 
 ---
+
+## Azure DevOps Services
+
+### Azure Artifacts
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’57”](https://user-images.githubusercontent.com/46926951/229634327-b95517b3-c648-40a6-a3e7-7d4ffcf06818.jpg)
+
+
+---
+
+
+### Azure Boards - gerenciamento de projetos ( backlog - planejamento - cards )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’55”](https://user-images.githubusercontent.com/46926951/229633176-ed0dcbfe-1779-4c80-8ad1-83f2aa7e05d5.jpg)
+
+
+---
+
+### Azure Repos ( repositorios )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’24”](https://user-images.githubusercontent.com/46926951/229633859-7c786721-03b7-4d7b-9484-2d5989a8918e.jpg)
+
+
+--- 
+
+
+### Azure Test Plans
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’37”](https://user-images.githubusercontent.com/46926951/229634090-68b476c2-45a9-4bab-8f8d-bf9096a733e4.jpg)
+
+---
+
+### Azure Pipelines - é o tema deste repositório ( realização da entrega contínua )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’19”](https://user-images.githubusercontent.com/46926951/229633543-67e5ee10-ff7f-4819-8ed2-2f4174c88fe9.jpg)
+
+
+---
+
+
+## Azure Dashboard
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-21’25”](https://user-images.githubusercontent.com/46926951/229634779-d84e37bb-bfb0-48ee-87f3-5598f27a4a1a.jpg)
+
+
+---
+
+
 
