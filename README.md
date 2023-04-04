@@ -533,14 +533,22 @@
 
 - 2. `Node`: é uma máquina ativa. E dentro dele ficam os serviços necessários para rodar os `pods`. Estes serviços são o `docker`, o `kubelet` e `kubeproxy` ou `k-proxy`. Ele pode conter um ou mais `pods`.
 
-- 3. `Pods`: é a menor unidade que pode ser criada, escalada ou manuseada. Funciona como uma coleção de `containers`. É um grupo de um ou mais `containers`, com armazenamento compartilhado e recursos de rede e uma especificação de como executar os contêineres. O conteúdo de um `pod` é sempre co-localizado e co-agendado e executado em um contexto compartilhado. Um Pod modela um `"host lógico"` específico do aplicativo: ele contém um ou mais contêineres de aplicativos que são relativamente fortemente `acoplados`. Em contextos fora da `nuvem`, os aplicativos executados na mesma máquina física ou virtual são análogos aos aplicativos em nuvem executados no mesmo host lógico. Assim como contêineres de aplicativos, um `pod` pode conter `contêineres init` que são executados durante a inicialização do pod. Você também pode injetar `contêineres efêmeros` para depuração se seu cluster oferecer isso. Ele pode conter um ou mais containers.
+- 3. `Pods`: é a menor unidade que pode ser criada, escalada ou manuseada. Funciona como uma coleção de `containers`. É um grupo de um ou mais `containers`, com armazenamento compartilhado e recursos de rede e uma especificação de como executar os contêineres. O conteúdo de um `pod` é sempre co-localizado e co-agendado e executado em um contexto compartilhado. Um Pod modela um `"host lógico"` específico do aplicativo: ele contém um ou mais contêineres de aplicativos que são relativamente fortemente `acoplados`. Em contextos fora da `nuvem`, os aplicativos executados na mesma máquina física ou virtual são análogos aos aplicativos em nuvem executados no mesmo host lógico. Assim como contêineres de aplicativos, um `pod` pode conter `contêineres init` que são executados durante a inicialização do pod. Você também pode injetar `contêineres efêmeros` para depuração se seu cluster oferecer isso. Ele pode conter um ou mais `containers`.
+
+- 4. `Container`: o ideal é sempre usar um conteiner por `pod` por causa do `acoplamento`. É preciso manter um container por pod para manter o isolamento entre os containers, e assim cada um de seus recursos de memória e volume.
 
 
+### Preciso do Kubernetes?
+- Se a resposta for `sim` para uma ou para as duas perguntas, é necessário utilizar:
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’58”](https://user-images.githubusercontent.com/46926951/229931478-f8d1e19f-3287-4e80-83ad-5d1347f1587b.jpg)
 
+---
 
+### Recursos do Kubernetes
+- Só faz sentido se a aplicação opera com poucos usuários
 
-
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’46”](https://user-images.githubusercontent.com/46926951/229931794-acd3d0c2-d587-4e01-8876-a3bfcc01a0b4.jpg)
 
 
 
