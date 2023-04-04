@@ -316,3 +316,19 @@
 
 
 ---
+
+> 3. Agent Pool ( Usa o agente hospedados pela Microsoft que utiliza o sistema operacional ubuntu-latest. Mas também pode utilizar outra, inclusive o Windows )
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’34”](https://user-images.githubusercontent.com/46926951/229880934-cdc29177-bca2-46c6-b248-5c74df44b81d.jpg)
+
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’54”](https://user-images.githubusercontent.com/46926951/229881418-39d26eb6-cbc0-428e-8312-e331d5b1ae8c.jpg)
+
+
+---
+
+
