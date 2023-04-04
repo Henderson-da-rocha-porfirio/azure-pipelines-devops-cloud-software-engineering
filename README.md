@@ -332,3 +332,28 @@
 ---
 
 
+> 4. Steps ( Com scripts que escrevem no log uma mensagem e com displayName que é o nome do Step. E `echos` podem ser mais de um como na imagem )
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-4’06”](https://user-images.githubusercontent.com/46926951/229881880-783d9799-1d61-4176-bbf8-f593379fbd15.jpg)
+
+
+---
+
+- É importante lembrar que a formatação é importante. Sempre escrever a posição certa de cada linha.
+
+---
+
+> 5. Build iniciado e completado com sucesso ( depois de `commit` )
+
+![image](https://user-images.githubusercontent.com/46926951/229883633-a5b4e1c9-1e35-4015-95f7-b71ed67ddeb0.png)
+
+---
+
+- Ele rodou os dois `steps` onde temos os scripts:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-7’09”](https://user-images.githubusercontent.com/46926951/229884122-92f201dc-58d1-4468-ad7c-e474797670dc.jpg)
+
+---
+
