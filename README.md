@@ -449,9 +449,33 @@
 
 ---
 
+### Teste de Integração
 
+- Avalia se a aplicação está funcionando como esperado através do consumo da api.
+- Muito aplicado em API's Rest.
+- Muito utilizado em arquiteturas de aplicação de microserviços.
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’40”](https://user-images.githubusercontent.com/46926951/229917941-0a5d0bf6-af41-4927-8520-e4fe931dbcbc.jpg)
 
+---
+
+### Teste E2E ( End-to-End )
+
+- Validar numa situação real como a aplicação irá se comportar.
+- Também conhecido como testes automatizados.
+- É o teste mais próximo de como o usuário interage com o aplicativo(simulando inputs, clicks e navegabilidade).
+- Eles dependem do comportamento do UX. Isso significa que a interface esteja finalizada para uso.
+- É uma estratégia mais lenta para a execução. 
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’28” (1)](https://user-images.githubusercontent.com/46926951/229918550-de032789-09b2-4741-99ae-a787e660a7cd.jpg)
+
+---
+
+- Ferramenta E2E mais utilizada para aplicativos web é o selênio
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’21”](https://user-images.githubusercontent.com/46926951/229920124-f70f13c1-cdd6-479c-97d4-120a4955c642.jpg)
+
+---
 
 
 
