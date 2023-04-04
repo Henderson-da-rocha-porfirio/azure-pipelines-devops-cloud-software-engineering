@@ -496,8 +496,14 @@
 
 ### Plataformas CLOUD
 
-- Na AWS o serviço do kubernetes é chamado de `eks`.
-- No Azure é chamado de `aks`.
+- Na Amazon AWS o serviço do kubernetes é chamado de `eks`.
+- Na Microsoft Azure é chamado de `aks`.
+- No Google é chamado de `gke`.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’24”](https://user-images.githubusercontent.com/46926951/229932663-639eb8c3-264f-4eda-ada9-85922707b740.jpg)
+
+---
+
 
 ### Kubernetes como orquestrador de containers
 
@@ -547,13 +553,39 @@
 
 ### Recursos do Kubernetes
 - Só faz sentido se a aplicação opera com poucos usuários
+- Trabalhando com Microserviços, é essencial trabalhar com k8s.
+- Fundamental para um sistema que necessita ficar no `ar` em pleno funcionamento e tem `picos de acesso` constantes.
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’46”](https://user-images.githubusercontent.com/46926951/229931794-acd3d0c2-d587-4e01-8876-a3bfcc01a0b4.jpg)
 
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’03”](https://user-images.githubusercontent.com/46926951/229932473-d65edb64-d9d8-45c9-b64a-b6ce0e1595ec.jpg)
+
+---
 
 
+### K8s Tem serviço de portabilidade entre os serviços
+
+- 
 
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’24”](https://user-images.githubusercontent.com/46926951/229932663-639eb8c3-264f-4eda-ada9-85922707b740.jpg)
+
+---
+
+
+### K8s Usado também no Machine Learning e Big Data
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’40”](https://user-images.githubusercontent.com/46926951/229933223-d63765d8-3dd8-4988-8c20-4ffd81c6d656.jpg)
+
+---
+
+### Kubernetes também usado em soluções `servless` como o Knative
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’53”](https://user-images.githubusercontent.com/46926951/229933407-7484ff66-e508-4c35-9718-9eb83747755c.jpg)
+
+---
 
 
 
