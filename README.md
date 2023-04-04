@@ -425,4 +425,18 @@
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’51”](https://user-images.githubusercontent.com/46926951/229898414-69af2c5e-06ad-49b4-aced-3f274359f99a.jpg)
 
----
+> 1. Processo Confiável Repetível: repetição do processo de implantação e confiança nele.
+>
+> 2. Automatize Tudo: automatizar tudo relacionado a implantação, teste de qualidade e segurança. Isso signfica menos esforço para executá-lo e monitorar o seu progresso garantindo resultados consistentes.
+>
+> 3. Repositório em Tudo: versionar a aplicação, configurações, infraestrutura, banco de dados e a documentação.
+>
+> 4. Mais complicado primeiro: lidar com as coisas difíceis primeiro. Tarefas demoradas ou propensas a erros devem ser tratadas primeiro e o mais rapidamente possível.
+>
+> 5. Qualidade Interna: criar `loops` de feedbacks curtos para lidar com `bugs` assim que ele forem criados.
+>
+> 6. Concluído significa liberado: aplicado apenas quando se está em produção.
+>
+> 7. Todos são responsáveis: a responsabilidade é de funcionamento em `todos` os ambientes ( local, hml, stage, prod ) e principalmente em produção.
+>
+> 8. Melhoria Contínua: O processo ser melhorado e revisado constantemente. Para isso é preciso monitorar e criar métricas.
