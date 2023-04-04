@@ -357,3 +357,15 @@
 
 ---
 
+### Schedule ( agendamento de builds )
+
+- Padrão
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’28”](https://user-images.githubusercontent.com/46926951/229884969-17598057-3dec-4c04-8330-90296b1c387e.jpg)
+---
+
+- Agendamento:
+
+![image](https://user-images.githubusercontent.com/46926951/229885720-66d6928d-7332-4b95-bc74-2f2e6041a066.png)
+
+---
