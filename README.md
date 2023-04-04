@@ -440,3 +440,27 @@
 > 7. Todos são responsáveis: a responsabilidade é de funcionamento em `todos` os ambientes ( local, hml, stage, prod ) e principalmente em produção.
 >
 > 8. Melhoria Contínua: O processo ser melhorado e revisado constantemente. Para isso é preciso monitorar e criar métricas.
+
+
+## TDD - Test Driven Development ( desenvolvimento orietado a teste )
+- teste unitário: é o componente principal desta metodologia
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’39” (1)](https://user-images.githubusercontent.com/46926951/229917069-e7a78faf-c343-4c5e-a03b-6e02ff58a874.jpg)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
