@@ -477,6 +477,75 @@
 
 ---
 
+### Kubernetes - k8s
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’39”](https://user-images.githubusercontent.com/46926951/229922671-44dd2c6c-fbf9-4e76-ae66-ea0f92e5a3cc.jpg)
+
+---
+
+- Kubernetes é de origem grega e quer dizer `timoneiro`.
+- É um sistema de código aberto para a orquestração de containers.
+- Ele veio a existir depois de seu antecessor: o `borg`.
+
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’06”](https://user-images.githubusercontent.com/46926951/229923581-667a1e82-7364-487c-8301-bd154a9e7d2d.jpg)
+
+---
+
+### Plataformas CLOUD
+
+- Na AWS o serviço do kubernetes é chamado de `eks`.
+- No Azure é chamado de `aks`.
+
+### Kubernetes como orquestrador de containers
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’40”](https://user-images.githubusercontent.com/46926951/229924102-64c0427b-7654-4a18-a269-7cd953eea303.jpg)
+
+---
+
+- Ele é o responsável pela orquestração para a implantação, o gerenciamento e a escala de containers.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-4’45”](https://user-images.githubusercontent.com/46926951/229924657-3db80a2c-18be-43aa-9652-a17e840d464f.jpg)
+
+---
+
+### Arquitetura do Kubernetes
+
+> 1. Cluster
+- Podemos ter um ou vários clusters 
+- Qual é a função do cluster?
+ ````
+O clustering ou análise de agrupamento de dados é o conjunto de técnicas de prospecção de dados (data mining) que visa fazer agrupamentos automáticos de dados segundo o seu grau de semelhança. O critério de semelhança faz parte da definição do problema e, dependendo, do algoritmo.
+````
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
