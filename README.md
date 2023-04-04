@@ -393,3 +393,21 @@
 - Também pode ser utilizado dependsOn:
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-17’22”](https://user-images.githubusercontent.com/46926951/229891312-877af735-eee6-4ec2-ab28-65698f4f527c.jpg)
+---
+
+### Tasks e Variáveis de Jobs\
+
+![image](https://user-images.githubusercontent.com/46926951/229893276-b51fd781-ebcb-4d49-9283-7794d8ef6286.png)
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-5’05”](https://user-images.githubusercontent.com/46926951/229893550-4a0924bd-41eb-4383-8bf1-31336e3180c6.jpg)
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-5’29”](https://user-images.githubusercontent.com/46926951/229893761-d0229b7f-0d42-4de3-a693-b5a8d03494a2.jpg)
+
+---
+
+![image](https://user-images.githubusercontent.com/46926951/229894148-982e3c3a-3ad5-4d94-af0a-00a2efbda891.png)
+
