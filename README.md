@@ -382,3 +382,14 @@
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-10’57” (1)](https://user-images.githubusercontent.com/46926951/229889124-31652103-452e-477d-bd15-1103d0dd915d.jpg)
 
+---
+
+### Stages:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-5’23”](https://user-images.githubusercontent.com/46926951/229890949-beb888d3-c137-4181-b05e-b01eab74bead.jpg)
+
+---
+
+- Também pode ser utilizado dependsOn:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-17’22”](https://user-images.githubusercontent.com/46926951/229891312-877af735-eee6-4ec2-ab28-65698f4f527c.jpg)
