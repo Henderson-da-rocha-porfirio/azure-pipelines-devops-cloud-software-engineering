@@ -514,9 +514,13 @@
 > 1. Cluster
 - Podemos ter um ou vários clusters 
 - Qual é a função do cluster?
- ````
-O clustering ou análise de agrupamento de dados é o conjunto de técnicas de prospecção de dados (data mining) que visa fazer agrupamentos automáticos de dados segundo o seu grau de semelhança. O critério de semelhança faz parte da definição do problema e, dependendo, do algoritmo.
-````
+
+> O que é um cluster de Kubernetes?
+>
+> Um cluster de Kubernetes é um conjunto de nós que executam aplicativos em contêineres. Os pacotes de aplicativos em contêineres contêm um aplicativo e alguns serviços necessários. Eles são mais leves e flexíveis que as máquinas virtuais. Dessa forma, os clusters de Kubernetes permitirão que os aplicativos sejam desenvolvidos, movidos e gerenciados mis facilmente.
+>
+> Os clusters de Kubernetes permitem que os contêineres sejam executados em várias máquinas e ambientes: virtuais, físicos, com base em nuvem e locais. Ao contrário das máquinas virtuais, os contêineres de Kubernetes não estão restritos a um sistema operacional específico. Em vez disso, eles podem compartilhar sistemas operacionais e ser executados em qualquer lugar.
+
 
 
 
