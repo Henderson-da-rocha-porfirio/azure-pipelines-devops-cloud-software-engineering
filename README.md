@@ -411,3 +411,18 @@
 
 ![image](https://user-images.githubusercontent.com/46926951/229894148-982e3c3a-3ad5-4d94-af0a-00a2efbda891.png)
 
+---
+
+## Princípios da Implantação Contínua ( CD = Continuos Deployment ) - implantação das alterações do código em produção
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’34”](https://user-images.githubusercontent.com/46926951/229897938-3dfe2975-3b73-4bf8-897e-deac209549f3.jpg)
+
+---
+
+---
+
+## Princípios da Entrega Contínua ( CD = Continuos Delivery ) - 
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’51”](https://user-images.githubusercontent.com/46926951/229898414-69af2c5e-06ad-49b4-aced-3f274359f99a.jpg)
+
+---
