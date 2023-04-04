@@ -543,6 +543,129 @@
 
 - 4. `Container`: o ideal é sempre usar um conteiner por `pod` por causa do `acoplamento`. É preciso manter um container por pod para manter o isolamento entre os containers, e assim cada um de seus recursos de memória e volume.
 
+### Dentro disso tudo aí acima temos mais alguns componentes
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’06”](https://user-images.githubusercontent.com/46926951/229934138-4b0b7361-c8b3-42ce-8b16-1888c17c34d4.jpg)
+
+---
+> ETCD
+
+- é o banco de dados.
+- é o responsável pelo armazenamento de alta disponibilidade de informações.
+- guarda as informações em formato chave e valores.
+- armazena todos os dados de configurações e status do cluster.
+- é usado como apoio para todos os dados de armazenamento do kubernetes.
+- é preciso ter um plano de backup para estes dados.
+
+- [DOC](https://etcd.io/)
+
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’07”](https://user-images.githubusercontent.com/46926951/229934063-49d56cf5-c99c-40e9-b34d-235a185898ab.jpg)
+
+---
+
+> API Server
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’09”](https://user-images.githubusercontent.com/46926951/229934332-6508e170-4cee-404f-962c-bece86125be7.jpg)
+
+---
+
+> Controller Manager
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’11”](https://user-images.githubusercontent.com/46926951/229934569-db446e16-9508-4612-b0eb-83152c886151.jpg)
+
+---
+
+> Workers
+
+- é a representação em si: ele contém o kubelet, o kubeproxy e o sin-advisor e eles se conectam aos `pods` dentro do `docker`.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’12”](https://user-images.githubusercontent.com/46926951/229934779-919aa7e7-88fc-4c0c-a9d8-64ee0093d03c.jpg)
+
+---
+
+> Scheduler
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’13”](https://user-images.githubusercontent.com/46926951/229934899-fcced78c-c2c9-48a3-b83c-ac32f6a491b7.jpg)
+
+---
+
+> KubeCTL
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’15”](https://user-images.githubusercontent.com/46926951/229934995-d22181ff-e3f2-4ace-8da2-071690ddd494.jpg)
+
+---
+
+> Kubelet
+
+- é o agente executado em cada um dos `nodes` de um worker quando ele se conecta ao `docker`.
+- ele tem a responsabilidade de realizar a criação, modificação, execução e exclusão dos containers.
+- ele obtém informações da `master` e garante que todos os `pods` atribuídos a ele estejam em execução e configurados em seu estado desejado.
+- todos os `nodes` do `kubernetes` deve ter um `Kubelet`.
+- ele cria um `pod` deixando-o pronto para o `container`.
+- testa e verifica a saúde do `container`.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’16”](https://user-images.githubusercontent.com/46926951/229935105-f4ebbfa1-87d6-4c63-b8f3-a4bde614ac5b.jpg)
+
+---
+
+> Kubeproxy
+
+- observa todos os serviços e mantém a configuração da rede em todos os elementos do `cluster`.
+- ele faz isso encaminhando os tráfegos para os `containers` com base nos endereçamentos dos `ip's` e nos números das `portas` da solicitação processada.
+- 
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’17” (1)](https://user-images.githubusercontent.com/46926951/229935179-c12d7ad7-3c1d-432d-a678-657202f12ebc.jpg)
+
+
+---
+
+> Replication Controller
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’19”](https://user-images.githubusercontent.com/46926951/229935285-7c318f47-2a6b-418d-9457-79ebe503a874.jpg)
+
+---
+
+
+> Services
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’20”](https://user-images.githubusercontent.com/46926951/229935367-c49ae603-8b8e-45cd-83c0-d57117ff0a09.jpg)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### Preciso do Kubernetes?
 - Se a resposta for `sim` para uma ou para as duas perguntas, é necessário utilizar:
