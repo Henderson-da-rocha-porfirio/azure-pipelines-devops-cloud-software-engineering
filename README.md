@@ -479,6 +479,8 @@
 
 ### Kubernetes - k8s
 
+- [DOC](https://kubernetes.io/pt-br/)
+
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’39”](https://user-images.githubusercontent.com/46926951/229922671-44dd2c6c-fbf9-4e76-ae66-ea0f92e5a3cc.jpg)
 
 ---
@@ -511,6 +513,8 @@
 
 ### Arquitetura do Kubernetes
 
+- [Componentes do Kubernetes](https://kubernetes.io/pt-br/docs/concepts/overview/components/)
+
 > 1. Cluster
 - Podemos ter um ou vários clusters 
 - Qual é a função do cluster?
@@ -521,10 +525,15 @@
 >
 > Os clusters de Kubernetes permitem que os contêineres sejam executados em várias máquinas e ambientes: virtuais, físicos, com base em nuvem e locais. Ao contrário das máquinas virtuais, os contêineres de Kubernetes não estão restritos a um sistema operacional específico. Em vez disso, eles podem compartilhar sistemas operacionais e ser executados em qualquer lugar.
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-5’24”](https://user-images.githubusercontent.com/46926951/229926176-c7e94acc-b5ee-408f-86d0-43a53e317683.jpg)
 
+---
 
+- 1. A `Master`: é o ponto de controle central que possibilita a visão unificada do cluster. Ou seja, ela é a máquina mestre que recebe as configurações declaradas num arquivo `.yml`. É o mesmo formato de arquivo usado no `appliacation.yml` acima, como exemplo. E ela gerencia um ou mais `nodes`.
 
+- 2. `Node`: é uma máquina ativa. E dentro dele ficam os serviços necessários para rodar os `pods`. Estes serviços são o `docker`, o `kubelet` e `kubeproxy` ou `k-proxy`. Ele pode conter um ou mais `pods`.
 
+- 3. `Pods`: é a menor unidade que pode ser criada, escalada ou manuseada. Funciona como uma coleção de `containers`. É um grupo de um ou mais `containers`, com armazenamento compartilhado e recursos de rede e uma especificação de como executar os contêineres. O conteúdo de um `pod` é sempre co-localizado e co-agendado e executado em um contexto compartilhado. Um Pod modela um `"host lógico"` específico do aplicativo: ele contém um ou mais contêineres de aplicativos que são relativamente fortemente `acoplados`. Em contextos fora da `nuvem`, os aplicativos executados na mesma máquina física ou virtual são análogos aos aplicativos em nuvem executados no mesmo host lógico. Assim como contêineres de aplicativos, um `pod` pode conter `contêineres init` que são executados durante a inicialização do pod. Você também pode injetar `contêineres efêmeros` para depuração se seu cluster oferecer isso. Ele pode conter um ou mais containers.
 
 
 
