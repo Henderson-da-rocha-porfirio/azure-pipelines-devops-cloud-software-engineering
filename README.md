@@ -384,7 +384,7 @@
 
 ---
 
-### Stages:
+### Stages de Jobs:
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-5’23”](https://user-images.githubusercontent.com/46926951/229890949-beb888d3-c137-4181-b05e-b01eab74bead.jpg)
 
