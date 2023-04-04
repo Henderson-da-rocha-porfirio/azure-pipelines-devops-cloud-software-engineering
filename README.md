@@ -289,9 +289,30 @@
 
 ---
 
-### Configurar Pipeline com Yaml ( Starter Pipeline / não configurado e o Existing Azure com YAML pré-configurado )
+### Configurar Pipeline com Yaml ( Starter Pipeline/não configurado e o Existing Azure/pré-configurado )
 
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’47”](https://user-images.githubusercontent.com/46926951/229879006-87b2fd5c-b179-4b19-8180-0633117e74a4.jpg)
 
+---
 
+### Usando o Starter Pipeline para criar o YAML
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’01”](https://user-images.githubusercontent.com/46926951/229879640-13d76eb4-d442-4ad6-a8a4-be83e8be2707.jpg)
+
+> 1. Comentários
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’09”](https://user-images.githubusercontent.com/46926951/229879851-a80a30a3-d761-47ae-9d30-e78dfcf9a3e7.jpg)
+
+---
+
+> 2. Integração Contínua ( no exemplo da imagem abaixo, mostra o gatilho na branch Master, ou seja, sempre que a master for atualizada, irá executar esse pipeline  )
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’19”](https://user-images.githubusercontent.com/46926951/229880165-130f6c9d-a514-4371-8167-8a49edc6cf13.jpg)
+
+
+---
