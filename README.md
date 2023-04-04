@@ -369,3 +369,16 @@
 ![image](https://user-images.githubusercontent.com/46926951/229885720-66d6928d-7332-4b95-bc74-2f2e6041a066.png)
 
 ---
+
+### Jobs - Dependências e Condições
+
+- Dependência: `dependsOn`. No caso da imagem abaixo, o `job1` dependerá do funcionamento do `job4`.
+- Condição: `condition`. No caso da imagem, apenas se o `job4` falhar: `failed()`
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-9’44”](https://user-images.githubusercontent.com/46926951/229888146-25226804-a412-4782-8d93-c9380bb1acae.jpg)
+---
+
+- Exemplo com `succeeded:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-10’57” (1)](https://user-images.githubusercontent.com/46926951/229889124-31652103-452e-477d-bd15-1103d0dd915d.jpg)
+
