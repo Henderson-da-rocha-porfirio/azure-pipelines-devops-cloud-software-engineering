@@ -289,3 +289,9 @@
 
 ---
 
+### Configurar Pipeline com Yaml ( Starter Pipeline / não configurado e o Existing Azure com YAML pré-configurado )
+
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’47”](https://user-images.githubusercontent.com/46926951/229879006-87b2fd5c-b179-4b19-8180-0633117e74a4.jpg)
+
+
