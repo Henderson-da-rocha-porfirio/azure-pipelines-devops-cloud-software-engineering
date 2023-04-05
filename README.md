@@ -1,5 +1,17 @@
 # azure-pipelines-devops-cloud-software-engineering
 
+
+---
+
+- 1 - [Cultura DevOps](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#azure-pipelines-devops-cloud-software-engineering)
+- 2 - [DevOps](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#devops)
+- 3 - [ CI - Continuos Integration - Integração Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#ci---integra%C3%A7%C3%A3o-cont%C3%ADnua)
+- 4 - [ CD - Continuos Deploy - Implantação Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#ci---integra%C3%A7%C3%A3o-cont%C3%ADnua)
+- 5 - [ CD- Continuos Delivery - Entrega Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#princ%C3%ADpios-da-entrega-cont%C3%ADnua--cd--continuos-delivery---)
+- 6 - [ Azure DevOps - Serviços e Recursos](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#azure-devops--servi%C3%A7os-e-recursos-)
+
+---
+
 ### Muito mais que ferramenta, é cultura!
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’33”](https://user-images.githubusercontent.com/46926951/229618786-7544479a-00f1-455a-ade2-7b0e12805655.jpg)
