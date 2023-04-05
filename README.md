@@ -545,6 +545,12 @@
 
 ---
 
+## Deployment Patterns - Estratégia de implantação
+
+### 1 Big
+
+---
+
 ## Kubernetes - k8s
 
 - [DOC](https://kubernetes.io/pt-br/)
@@ -635,7 +641,9 @@
 > Kube API Server
 
 - Servidor de aplicações que fornece as `api's` do kubernetes por meio da teconologia `json`.
-- Os estados ojetos desse `applets`
+- Ele quem expõe a `api`.
+- Os estados dos ojetos desse `applets` ficam armazenados no `ETCD`. e O `kubeCTL` usa o `Api Server` para se comunicar com o cluster.
+- Ele pode ser dimensionado horizontalmente: implantação de mais instâncias e pode executar várias do `kube-api-server` e equilibrar o tráfego entre elas.
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’09”](https://user-images.githubusercontent.com/46926951/229934332-6508e170-4cee-404f-962c-bece86125be7.jpg)
 
@@ -655,13 +663,18 @@
 
 ---
 
-> Scheduler
+> Kube Scheduler
+
+- Observa os `pods` recém-criados sem nenhum molde atribuído a eles e seleciona um `node` para executá-los. E faz isso levando em conta os requisitos de recursos individuais e coletivos, restrições de hardware, software e política. Além de especificações de afinidades e anti-afinidades, localidade de dados, interferência entre carga de trabalho e seus prazos.
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’13”](https://user-images.githubusercontent.com/46926951/229934899-fcced78c-c2c9-48a3-b83c-ac32f6a491b7.jpg)
 
 ---
 
 > KubeCTL
+
+- O `kubeCTL` usa o `Api Server` para se comunicar com o cluster.
+- Ele é uma ferramenta de linha de código para se comunicar com o `Kube API Server`.
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’15”](https://user-images.githubusercontent.com/46926951/229934995-d22181ff-e3f2-4ace-8da2-071690ddd494.jpg)
 
@@ -693,12 +706,16 @@
 
 > Replication Controller
 
+- Responsável por manter o número correto de `pods` para cada objeto de `controller` e replicação no sistema.
+
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’19”](https://user-images.githubusercontent.com/46926951/229935285-7c318f47-2a6b-418d-9457-79ebe503a874.jpg)
 
 ---
 
 
 > Services Controller
+
+- são criadas contas padrões e tokens de acesso a `api` para novos ingressantes.
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’20”](https://user-images.githubusercontent.com/46926951/229935367-c49ae603-8b8e-45cd-83c0-d57117ff0a09.jpg)
 
@@ -768,9 +785,21 @@
 
 
 
+---
 
 
+### kubernetes Control Plane e o Kubernetes Node
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-9’07”](https://user-images.githubusercontent.com/46926951/230174193-97da7ae0-c7f5-4ec8-8542-03a4b0a7c603.jpg)
+
+> Controllers
+
+- 1 - `Kube-Controller Manager`: componente do `Master` e roda os controladores.
+- `node controller`: responsável por modificar e responder quando e como os `nodes` caem.
+
+- 2 - `Cloud-Controller Manager`: permite que o código do fornecedor de `cloud` e o código do `kubernetes` possam evoluir independentes um do outro.
+
+- Endpoints: fazem a junção dos serviços e `pods`.
 
 
 
