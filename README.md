@@ -13,7 +13,8 @@
 - 8 - [ YAML ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#yaml----acr%C3%B4nimo-para-yaml-aint-markup-language)
 - 9 - [ TDD ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#tdd---test-driven-development--desenvolvimento-orietado-a-teste-)
 - 10 - [ Cloud - Scaling - Escalonamento ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#cloud---escalonamento)
-- 11 - [ Kubernetes - k8s ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#kubernetes---k8s)
+- 11 - [ Deployment Patterns - Estratégia de implantação ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#deployment-patterns---estrat%C3%A9gia-de-implanta%C3%A7%C3%A3o)
+- 12 - [ Kubernetes - k8s ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#kubernetes---k8s)
 ---
 
 ### Muito mais que ferramenta, é cultura!
