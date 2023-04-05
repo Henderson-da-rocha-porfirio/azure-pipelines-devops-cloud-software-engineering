@@ -3,12 +3,12 @@
 
 ---
 
-- 1 - [Cultura DevOps](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#azure-pipelines-devops-cloud-software-engineering)
-- 2 - [DevOps](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#devops)
-- 3 - [ CI - Continuos Integration - Integração Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#ci---integra%C3%A7%C3%A3o-cont%C3%ADnua)
-- 4 - [ CD - Continuos Deploy - Implantação Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#ci---integra%C3%A7%C3%A3o-cont%C3%ADnua)
-- 5 - [ CD- Continuos Delivery - Entrega Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#princ%C3%ADpios-da-entrega-cont%C3%ADnua--cd--continuos-delivery---)
-- 6 - [ Azure DevOps - Serviços e Recursos](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering/blob/master/README.md#azure-devops--servi%C3%A7os-e-recursos-)
+- 1 - [Cultura DevOps](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#muito-mais-que-ferramenta-%C3%A9-cultura)
+- 2 - [DevOps](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#devops)
+- 3 - [ CI - Continuos Integration - Integração Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#ci---integra%C3%A7%C3%A3o-cont%C3%ADnua)
+- 4 - [ CD - Continuos Deploy - Implantação Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#cd---deploy-cont%C3%ADnuo)
+- 5 - [ CD- Continuos Delivery - Entrega Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#princ%C3%ADpios-da-entrega-cont%C3%ADnua--cd--continuos-delivery---)
+- 6 - [ Azure DevOps - Serviços e Recursos](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#azure-devops--servi%C3%A7os-e-recursos-)
 
 ---
 
