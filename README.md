@@ -1,4 +1,4 @@
-# azure-pipelines-devops-engineering
+# azure-pipelines-devops-cloud-software-engineering
 
 ### Muito mais que ferramenta, é cultura!
 
@@ -477,7 +477,59 @@
 
 ---
 
-### Kubernetes - k8s
+##  Cloud - Escalonamento
+
+> Scaling up
+
+- O escalonamento vertical é botar mais capacidade de memória (principal e/ou de massa) e processamento. Ou seja, é comprar um hardware mais poderoso para dar conta do recado.
+
+- Em alguns casos basta criar mais processos/threads que está fazendo o scaling up, desde que o hardware já suporte esse aumento. Há casos que separar o banco de dados em vários dispositivos de armazenamento já seja uma escala vertical, novamente é escalar na mesma máquina.
+
+- O investimento é basicamente em hardware. Comprando mais processador. memória e armazenamento já tem uma capacidade aumentada.
+
+- Em alguns casos é mais questão de fazer uma simples configuração para alcançar o que o hardware único já suporta.
+
+- Também pode ser otimizar a aplicação para que ela desempenhe melhor e atenda mais do que fazia antes.
+
+> Scaling out
+
+- O escalonamento horizontal é colocar mais computadores para dar conta do recado. Claro que eles adicionam mais capacidade de processamento e memória também, na soma total.
+
+- É muito mais complexo fazer um escalonamento horizontal tanto do ponto de vista de gerenciamento quanto do ponto de vista de programação, ainda que existam ferramentas para facilitar. Não é só colocar os computadores, eles precisam "se falar" de forma consistente e adequada. Na verdade isso é considerado o problemas mais difícil de resolver na computação.
+
+- Por incrível que pareça pode ser mais barato que o vertical, pelo menos no custo da aquisição da infraestrutura já que é possível adquirir hardware mais simples e mais comum que costuma ser mais barato pela escala de produção. Claro que o custo de gerenciamento e desenvolvimento pode mudar o custo total.
+
+- Fora os casos que o vertical não comportaria a necessidade, afinal essa estratégia tem um limite que em tese o horizontal não tem, o horizontal tem a vantagem de ser mais tolerante a falhas, ou pelo menos ser mais fácil ter a operação de volta em caso de alguma falha.
+
+> Diferenças
+
+- Qualquer banco de dados minimamente estruturado pode fazer os dois tipos de escalonamento. O vertical não precisa nenhuma propriedade específica a não ser no caso de separar dados em vários dispositivos de armazenamento ou permitir várias linhas de processamento, por isso não é simples fazer em certas modelagens. O horizontal precisa de mecanismos que permitam e, se possível, facilitem o escalonamento horizontal. Não importa se ele é do tipo não relacional ou não, se usa SQL ou não.
+
+- Desconheço outros tipos, nem sei se é possível ter. Existem variações dessas formas, principalmente no horizontal existem muitas estratégias e técnicas. Também pode fazer um escalonamento híbrido.
+
+- São raras as aplicações que precisam de escala horizontal. Pelo menos no sentido de escala mesmo. Pode ser útil fazê-lo pela confiabilidade maior de ter mais de um nó atendendo as requisições, mas não que precise de mais recursos. O grosso da necessidade vem de aplicações web de alta demanda ou processamentos muito específicos.
+
+- Pode não parecer a mesma coisa mas tem uma pergunta que está relacionada, mostrando que escalar qualquer coisa horizontalmente pode parecer a solução, mas nem sempre resolve ou compensa a dificuldade que é inerente dela
+
+### Exemplos
+
+- Escalonamento Horizontal você adiciona mais máquinas em seu pool de recursos enquanto escalonamento Vertical significa que você adiciona mais poder (CPU, RAM) para uma máquina existente.
+
+- Em um banco de dados Horizontal é muitas vezes baseada no particionamento dos dados, ou seja, cada nó contém apenas parte dos dados.
+
+- No banco de dados Vertical os dados residem em um único nó (`node`) e o dimensionamento é feito através de multi-core, ou seja, espalha a carga entre o `CPU` e a `memória RAM`.
+
+- No escalonamento horizontal muitas vezes é mais fácil de redimensionar dinamicamente adicionando mais máquinas, já na Vertical é muitas vezes limitada à capacidade de uma única máquina escalonar,além de que a capacidade muitas vezes envolve o tempo de inatividade e vem com um limite superior.
+
+- Exemplo escalonamento horizontal: Cassandra, MongoDB..
+
+- Exemplo escalonamento vertical MySQL - Amazon RDS (A versão nuvem de MySQL). Ele fornece uma maneira fácil de escalar verticalmente, passando de pequenos para máquinas maiores. Este processo envolve muitas vezes o tempo de inatividade.
+
+- In-Memory Dados Grids como GigaSpaces XAP , Coerência etc .. são frequentemente otimizado tanto para escalonamento horizontal e vertical, simplesmente porque não é obrigado a disco. Horizontal através de particionamento e vertical através de apoio multi-core.
+
+---
+
+## Kubernetes - k8s
 
 - [DOC](https://kubernetes.io/pt-br/)
 
@@ -672,11 +724,9 @@
 > 3° Pod => contém dois `aplicativos` em `containers` e um `volume`.
 >
 > 4° Pod => contém três `aplicativos` em `containers` e dois `volumes`. O seu uso, para melhor compreensão são: aplicações onde podemos ter mais de um aplicativo integrado `verticalmente`. Por exemplo, uma aplicação `Wordpress`: onde tem um `servidor Linux`, e dentro dele tem um `servidor Web` do tipo `Apache`. Um `banco de dados` do tipo `Mysql`, e uma aplicação em `PHP` rodando no `Wordpress`.
-
 - Nos casos acima, é notório perceber o compartilhamento do endereço de `ip` e o seu `volume` dentro deste `pod`.
-
 - Os `pods` não são `imortais`, eles morrem. Ou seja, possuem uma vida útil limitada. Isso acontece se a sua escala for reduzida ou quando a versão sofre alguma atualização.
-- Eles possuem a habilidade de realizar dimensionamento horizontal.
+- Eles possuem a habilidade de realizar dimensionamento horizontal(com isso aumenta ou diminui o número de instâncias) e também pode realizar o `deploy`.
 
 
 ---
