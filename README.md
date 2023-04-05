@@ -632,7 +632,10 @@
 
 ---
 
-> API Server
+> Kube API Server
+
+- Servidor de aplicações que fornece as `api's` do kubernetes por meio da teconologia `json`.
+- Os estados ojetos desse `applets`
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’09”](https://user-images.githubusercontent.com/46926951/229934332-6508e170-4cee-404f-962c-bece86125be7.jpg)
 
@@ -743,6 +746,14 @@
 - Nos casos acima, é notório perceber o compartilhamento do endereço de `ip` e o seu `volume` dentro deste `pod`.
 - Os `pods` não são `imortais`, eles morrem. Ou seja, possuem uma vida útil limitada. Isso acontece se a sua escala for reduzida ou quando a versão sofre alguma atualização.
 - Eles possuem a habilidade de realizar dimensionamento horizontal(com isso aumenta ou diminui o número de instâncias) e também pode realizar o `deploy`.
+- Deploy Pattern a ser levada em consideração, é a do tipo `Canary`. Com isso, existem vários tipos de `pods`. Sendo o `default`, o réplica 7. Cujo o objetivo desse, é manter um conjunto estável de `pods` de réplicas em execução a qualquer momento. Assim ele garante a disponibilidade de números específicos de `pods` idênticos.
+- O `pod deployment` é uma forma decorativa de gerenciar `pods` por meio de réplicas 7. Ele inclui mecanismos de reversão e atualização contínua. E onde também é declarada o tipo de implantação que será feita do tipo `canary`.
+- No `pod deployment` é declarado o que precisamos. E o `deployment controller` o executa.
+
+---
+- Exemplo do `deployment`. Criação do `réplica 7` para três `pods`:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-7’16”](https://user-images.githubusercontent.com/46926951/230153223-77b316c3-12e3-4898-8bff-1867dafe873f.jpg)
 
 
 ---
