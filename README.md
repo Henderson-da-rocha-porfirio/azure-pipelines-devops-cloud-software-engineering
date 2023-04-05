@@ -548,7 +548,7 @@
 
 ## Deployment Patterns - Estratégia de implantação
 
-### 1 Big Bang ( também conhecida como Highlander, Reckless ou recreate )
+### 1. Big Bang ( também conhecida como Highlander, Reckless ou recreate )
 - Padrão simples e básico de implantar.
 - Este modelo apresenta vários problemas cujo principal é a indisponibilidade do sistema que é inevitável.
 - Consistem em desligar a versão `A`:
@@ -583,16 +583,152 @@
 
 ---
 
-### Implantação Ramped
+### 2. Implantação Ramped
 
-- Implantação Gradual máquina a máquina.
+- Implantação Gradual das versões `A` e `B`.
+- Estratégia mais simples de ser adotada quando se quer um tempo mínimo de `Failover` (tolerância a falhas).
+- É a utilizada por `default` nos serviços de `orquestração`.
+- Ambas versões coexistem ao mesmo tempo em `produção` até a sua substituição completa que é feita gradualmente:
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’57”](https://user-images.githubusercontent.com/46926951/230184765-8bc73678-7c44-4417-98de-e7e597c57d42.jpg)
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’00” (1)](https://user-images.githubusercontent.com/46926951/230185236-56af639c-3bf5-4097-8c22-f2746d552cae.jpg)
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’00” (1)](https://user-images.githubusercontent.com/46926951/230185510-6e0a11c6-32a3-4715-bd2b-f009de5f2b9d.jpg)
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’06” (1)](https://user-images.githubusercontent.com/46926951/230185763-b2ba6f42-cc8d-455b-8251-a5dffe3f65fc.jpg)
+
+---
+
+### Vantagens
+
+- Monitorar a saúde do sistema: `Azure Monitor` e `Application Insides`.
+- Rollback: proporciona a fácil reversão.
+- Compatibilidade: entre a versão antiga e a nova.
 
 
+### Indicações
+
+- Sistemas com média criticidade e poucas atualizações.
+
+- Ajuda do Serviço de Load Balancer do Azure para o Rollout ( lançamento ) e Rollback ( reversão ):
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’45”](https://user-images.githubusercontent.com/46926951/230187888-b608eed1-6983-4fec-ae8b-1c9bc2551c87.jpg)
+
+--- 
+
+### 3. Implantação Blue/Green
+
+- Tipo de implantação de fases chamadas `blue` para `green`. Mas não é gradual como a ramped. Para este processo é usado o `swap`.
+- Substitui completamente depois de testado e aprovado, uma versão do `blue` pela `green`.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’16” (1)](https://user-images.githubusercontent.com/46926951/230188637-20c1232c-1ec0-4257-b3ec-4a294ca7b748.jpg)
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’22”](https://user-images.githubusercontent.com/46926951/230188914-bd3f9b47-d533-4be9-aead-2e84f6239b27.jpg)
+
+---
+
+- Utilizando o Swap:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’26”](https://user-images.githubusercontent.com/46926951/230189282-112e51a7-c605-4ff8-8fbc-b4b5aecde5b6.jpg)
 
 
+### Vantagens
+
+- Rollout e Rollback instantâneos: lançamento e reversão imediatas.
+- Apenas uma versão: evita problemas como o `no-number` que é ter duas versoes simultâneas dividindo os usuários por algum tempo.
+- Podem ser feitos testes em toda a plataforma na transferência do `blue` para o `green`.
+- Ajuda do Serviço de Load Balancer do Azure para o Rollout ( lançamento ) e Rollback ( reversão ):
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’45”](https://user-images.githubusercontent.com/46926951/230187888-b608eed1-6983-4fec-ae8b-1c9bc2551c87.jpg)
+
+----
+
+### Desvantagens
+
+- Dobro do recurso.
+- Maior custo.
+- Precisa-se de uma estrutura maior que a do modelo `ramped`.
+- Perda de sessão: pode acontecer perda de dados durante o `deploy`.
+
+---
+
+
+### 4. Implantação Canary
+
+- Nome dado por causa do uso de canários nas minas de carvão.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’30”](https://user-images.githubusercontent.com/46926951/230192867-46d1eadd-b384-49d5-beda-c5b1e40bb877.jpg)
+
+---
+
+- Os carvoeiros levavam o canário para dentro das minas. Ou seja, caso houvesse algum vazamento de gás, os canários morreriam primeiro.
+- O canário era um teste. Se o canário morresse, o `teste` falhou.
+- Neste caso, necessitariam fazer o `rollback` que era sair da mina dentro do contexto da história.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’53”](https://user-images.githubusercontent.com/46926951/230193582-0c815852-c308-47ab-ad8c-93eb2b7f36ea.jpg)
+
+---
+
+- O canary funciona como uma mitigação de risco. 
+- São selecionados uma pequena quantidade de usuários do aplicativo para receber uma nova versão.
+- E a sáude da aplicação é monitorado para estes usuários da nova versão(bugs ou erros do sistema).
+- E se a saúde do sistema continuar estável, a nova versão é passada para os demais usuários.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’19” (1)](https://user-images.githubusercontent.com/46926951/230194972-6b08441a-69b8-419b-b2b6-045bc261a701.jpg)
+
+---
+
+- Pode ser usado geo-localização ou distribuir pelo `load balancer` determinando um percentual de usuarios para receber uma nova versão.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’49” (1)](https://user-images.githubusercontent.com/46926951/230196613-f0aae95c-18a7-46f9-8f6f-2916a020472d.jpg)
+
+---
+
+- O desafio da implantação de `canary` é conceber uma maneira de rotear alguns usuários para o `aplicativo`.
+- Para isso se usa `slots` do `app server`: separando 90% para a produção(versão antiga) e 10% para o `canary`(versão nova).
+- Outra possibilidade é expor usuários internos a implantação do `canary` antes dos usuários externos. Isso pode ser feito por `faixa de ip` através de `roteamento` baseado no intervalo de `ip de origem`.
+- E pode ser utilizado o `azure-traffic-manager` nesta tarefa.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’49” (1)](https://user-images.githubusercontent.com/46926951/230196613-f0aae95c-18a7-46f9-8f6f-2916a020472d.jpg)
+
+---
+
+### 5. Implantação A/B Testing
+
+- Trabalhando diferente do `canary`: os usuários não recebem uma nova versão para testar. Eles recebem variações para tal.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’20” (1)](https://user-images.githubusercontent.com/46926951/230199356-fd4dac3c-4ea4-457c-a990-b1c0001e21ef.jpg)
 
 
 ---
+
+### Azure Traffic Manager
+
+- Balanceador de tráfego baseado em `dns`.
+- Oferece alta disponibilidade do sistema e capacidade de resposta.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’34”](https://user-images.githubusercontent.com/46926951/230199951-a60450ca-1e18-40fc-933a-b2c66b39af8d.jpg)
+
+---
+
+- Tipos de balanceamento para os `endpoints`:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’16”](https://user-images.githubusercontent.com/46926951/230200454-f9203540-aeaf-46de-ba82-4a581ee44f49.jpg)
+
+
+---
+
 
 ## Kubernetes - k8s
 
