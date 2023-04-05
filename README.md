@@ -548,7 +548,49 @@
 
 ## Deployment Patterns - Estratégia de implantação
 
-### 1 Big
+### 1 Big Bang ( também conhecida como Highlander, Reckless ou recreate )
+- Padrão simples e básico de implantar.
+- Este modelo apresenta vários problemas cujo principal é a indisponibilidade do sistema que é inevitável.
+- Consistem em desligar a versão `A`:
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’41”](https://user-images.githubusercontent.com/46926951/230180302-37bcb14b-69ba-4864-8169-027550819364.jpg)
+
+---
+
+- Para implantar a versão `B` depois que a `A` for desativada:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’44”](https://user-images.githubusercontent.com/46926951/230180799-463bdb82-0cfb-4da8-b9e1-d2d98f00f64c.jpg)
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’53”](https://user-images.githubusercontent.com/46926951/230181649-ef09ffcf-f109-42de-8b15-34ed75aa725e.jpg)
+
+---
+
+### Onde usar e onde não-usar
+
+> Não Usar Quando:
+
+- Não são adequadas para `aplicativos modernos` porque os riscos são inaceitáveis voltados para o público externo.
+- Não usar em aplicações críticas onde as interrupções representa enorme perda financeira.
+- Pode-se usar `reversões` mas elas são muito demoradas, caras e até mesmo, algumas vezes, impossíveis de serem feitas. 
+
+> Quando usar:
+
+- Sistemas internos de baixa criticidade. Ex: recriar o ambiente de desenvolvimento.
+- Sistemas de Desenvolvimento/Testes.
+- Aplicativos de Desktop.
+- Implantar apenas em agendas pré-determinadas: momentos com baixo acesso e na madrugada para minimizar o problema da indisponibilidade do sistema.
+
+---
+
+### Implantação Ramped
+
+- Implantação Gradual máquina a máquina.
+
+
+
+
+
 
 ---
 
