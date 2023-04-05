@@ -9,7 +9,11 @@
 - 4 - [ CD - Continuos Deploy - Implantação Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#cd---deploy-cont%C3%ADnuo)
 - 5 - [ CD- Continuos Delivery - Entrega Contínua](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#princ%C3%ADpios-da-entrega-cont%C3%ADnua--cd--continuos-delivery---)
 - 6 - [ Azure DevOps - Serviços e Recursos](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#azure-devops--servi%C3%A7os-e-recursos-)
-
+- 7 - [ Azure Pipeline ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#azure-pipelines---%C3%A9-o-tema-deste-reposit%C3%B3rio--realiza%C3%A7%C3%A3o-da-entrega-cont%C3%ADnua-)
+- 8 - [ YAML ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#yaml----acr%C3%B4nimo-para-yaml-aint-markup-language)
+- 9 - [ TDD ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#tdd---test-driven-development--desenvolvimento-orietado-a-teste-)
+- 10 - [ Cloud - Scaling - Escalonamento ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#cloud---escalonamento)
+- 11 - [ Kubernetes - k8s ](hhttps://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#kubernetes---k8s)
 ---
 
 ### Muito mais que ferramenta, é cultura!
