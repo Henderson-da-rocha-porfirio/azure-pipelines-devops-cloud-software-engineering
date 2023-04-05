@@ -527,7 +527,7 @@
 
 > O que é um cluster de Kubernetes?
 >
-> Um cluster de Kubernetes é um conjunto de nós que executam aplicativos em contêineres. Os pacotes de aplicativos em contêineres contêm um aplicativo e alguns serviços necessários. Eles são mais leves e flexíveis que as máquinas virtuais. Dessa forma, os clusters de Kubernetes permitirão que os aplicativos sejam desenvolvidos, movidos e gerenciados mis facilmente.
+> Um cluster de Kubernetes é um conjunto de nós(`nodes`) que executam aplicativos em `contêineres`. Os pacotes de aplicativos em contêineres contêm um aplicativo e alguns serviços necessários. Eles são mais leves e flexíveis que as máquinas virtuais. Dessa forma, os `clusters` de Kubernetes permitirão que os aplicativos sejam desenvolvidos, movidos e gerenciados mis facilmente.
 >
 > Os clusters de Kubernetes permitem que os contêineres sejam executados em várias máquinas e ambientes: virtuais, físicos, com base em nuvem e locais. Ao contrário das máquinas virtuais, os contêineres de Kubernetes não estão restritos a um sistema operacional específico. Em vez disso, eles podem compartilhar sistemas operacionais e ser executados em qualquer lugar.
 
@@ -537,7 +537,7 @@
 
 - 1. A `Master`: é o ponto de controle central que possibilita a visão unificada do cluster. Ou seja, ela é a máquina mestre que recebe as configurações declaradas num arquivo `.yml`. É o mesmo formato de arquivo usado no `appliacation.yml` acima, como exemplo. E ela gerencia um ou mais `nodes`.
 
-- 2. `Node`: é uma máquina ativa. E dentro dele ficam os serviços necessários para rodar os `pods`. Estes serviços são o `docker`, o `kubelet` e `kubeproxy` ou `k-proxy`. Ele pode conter um ou mais `pods`.
+- 2. `Node`: é uma máquina ativa. E dentro dele ficam os serviços necessários para rodar os `pods`. Estes serviços são o `docker`, o `kubelet`, `cAdvisor`, `kubeproxy` ou `k-proxy`. Ele pode conter um ou mais `pods`.
 
 - 3. `Pods`: é a menor unidade que pode ser criada, escalada ou manuseada. Funciona como uma coleção de `containers`. É um grupo de um ou mais `containers`, com armazenamento compartilhado e recursos de rede e uma especificação de como executar os contêineres. O conteúdo de um `pod` é sempre co-localizado e co-agendado e executado em um contexto compartilhado. Um Pod modela um `"host lógico"` específico do aplicativo: ele contém um ou mais contêineres de aplicativos que são relativamente fortemente `acoplados`. Em contextos fora da `nuvem`, os aplicativos executados na mesma máquina física ou virtual são análogos aos aplicativos em nuvem executados no mesmo host lógico. Assim como contêineres de aplicativos, um `pod` pode conter `contêineres init` que são executados durante a inicialização do pod. Você também pode injetar `contêineres efêmeros` para depuração se seu cluster oferecer isso. Ele pode conter um ou mais `containers`.
 
@@ -576,9 +576,9 @@
 
 ---
 
-> Workers
+> Worker Node
 
-- é a representação em si: ele contém o kubelet, o kubeproxy e o sin-advisor e eles se conectam aos `pods` dentro do `docker`.
+- é a representação em si: ele contém o `kubelet`, o `kubeproxy` e o `cAdvisor` e eles se conectam aos `pods` dentro do `docker`.
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’12”](https://user-images.githubusercontent.com/46926951/229934779-919aa7e7-88fc-4c0c-a9d8-64ee0093d03c.jpg)
 
@@ -627,19 +627,67 @@
 ---
 
 
-> Services
+> Services Controller
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’20”](https://user-images.githubusercontent.com/46926951/229935367-c49ae603-8b8e-45cd-83c0-d57117ff0a09.jpg)
 
 ---
 
 
+> cAdvisor 
+
+- O `cAdvisor` é um agente de código aberto integrado ao binário `kubelet` que monitora o uso de recursos e analisa o desempenho dos `contêineres` . 
+- Ele coleta estatísticas sobre o uso de `CPU`, `memória`, `arquivo` e `rede` para todos os contêineres em execução em um determinado `node` ( não opera no nível do `pod` ).
+- É também o responsável por coletar métricas sobre os `pods` em execução para o `node`.
+
+![image](https://user-images.githubusercontent.com/46926951/230130586-4d4a9443-fe43-4495-bee4-02be37225b49.png)
+
+---
+
+> Pod
+
+- Um grupo de containers implantados em um único Worker Node
+- Ele é um conceito crucial no `kubernetes`.
+- É o ponto os `desenvolvedores` interagem.
+- É a menor unidade no `cluster` de kubernetes.
+- Nele é rodado o `container`.
+- Roda um ( o ideal ) ou mais de um `container` dentro dele. Com isso compartilha recursos e instruções sobre como executar o container. 
 
 
+![image](https://user-images.githubusercontent.com/46926951/230132989-b1bd71ad-2204-47c9-a0d2-32797478402e.png)
+
+---
+
+- Os pods podem se comunicar dentro do `cluster` usando o `ip` de serviço.
 
 
+![image](https://user-images.githubusercontent.com/46926951/230138074-fba04c70-a5d5-4646-b5b9-1e4716f12367.png)
+
+---
+
+> 1° Pod => contém um `aplicativo` em `container`.
+>
+> 2° Pod => contém um `aplicativo` em `container` e o seu `volume`.
+>
+> 3° Pod => contém dois `aplicativos` em `containers` e um `volume`.
+>
+> 4° Pod => contém três `aplicativos` em `containers` e dois `volumes`. O seu uso, para melhor compreensão são: aplicações onde podemos ter mais de um aplicativo integrado `verticalmente`. Por exemplo, uma aplicação `Wordpress`: onde tem um `servidor Linux`, e dentro dele tem um `servidor Web` do tipo `Apache`. Um `banco de dados` do tipo `Mysql`, e uma aplicação em `PHP` rodando no `Wordpress`.
+
+- Nos casos acima, é notório perceber o compartilhamento do endereço de `ip` e o seu `volume` dentro deste `pod`.
+
+- Os `pods` não são `imortais`, eles morrem. Ou seja, possuem uma vida útil limitada. Isso acontece se a sua escala for reduzida ou quando a versão sofre alguma atualização.
+- Eles possuem a habilidade de realizar dimensionamento horizontal.
 
 
+---
+
+> Container
+
+- Ele roda dentro do `pod`.
+- O ideal é rodar um container por `pod`. Mas podem `rodar` mais de um dentro desse.
+
+
+![image](https://user-images.githubusercontent.com/46926951/230136226-a42e8ea9-8394-48a9-a3c2-39f5176dc5d0.png)
 
 
 
