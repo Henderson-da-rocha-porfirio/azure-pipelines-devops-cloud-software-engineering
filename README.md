@@ -1175,13 +1175,26 @@
 > Uma esteira tradicional que segue os conceitos da agilidade é chamada de SDLC — sigla para Software Development Life Cycle, literalmente traduzido como `Ciclo de Vida de Desenvolvimento de Produto`.
 
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-5’04”](https://user-images.githubusercontent.com/46926951/230672996-58c8457c-7ee1-4c1f-9cce-066b76c22df6.jpg)
 
 
+---
+
+#### Desafios
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-6’20”](https://user-images.githubusercontent.com/46926951/230673269-f8f19ecb-ae1b-40ce-a8b0-dac372e158c0.jpg)
 
 
+---
 
 
+- O DBA precisa estar junto na CI ( implantação contínua - Continuos Integration ), ou seja, ele precisa ser incluído na cultura `DevOps`.
 
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-7’16” (1)](https://user-images.githubusercontent.com/46926951/230673149-1334848b-69d5-49ae-8273-6826cd660ac8.jpg)
+
+
+## Flyway
 
 
 
