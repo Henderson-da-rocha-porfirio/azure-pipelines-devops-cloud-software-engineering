@@ -15,9 +15,16 @@
 - 10 - [ Cloud - Scaling - Escalonamento ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#cloud---escalonamento)
 - 11 - [ Deployment Patterns - Estratégias de implantação (deployment) ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#deployment-patterns---estrat%C3%A9gia-de-implanta%C3%A7%C3%A3o)
 - 12 - [ Kubernetes - k8s ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#kubernetes---k8s)
+- 13 - [ Infraestrutura em Código (IaC) ]()
 ---
 
 ### Muito mais que ferramenta, é cultura!
+
+- A `antiga` cultura é baseado no modelo `humano` para provisionar ambientes. E este movimento de infraestrutura como código (IaC) veio para mudar porque traz consigo a cultura `nova` onde tudo é versionado e automatizado eliminando clicks e mais clicks.
+
+- Provisionar recursos utilizando `scripts` é possível trazer a `infraestrutura` cada vez mais próxima do `desenvolvimento`. E também o desenvolvimento mais próximo da infraestrutura. E isso torna a cultura `DevOps` mais forte nos times da empresa.
+
+- E o maior desafio é mudar a `cultura` e diminuir a curva de aprendizagem.
 
 ![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’33”](https://user-images.githubusercontent.com/46926951/229618786-7544479a-00f1-455a-ade2-7b0e12805655.jpg)
 
@@ -982,24 +989,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Preciso do Kubernetes?
 - Se a resposta for `sim` para uma ou para as duas perguntas, é necessário utilizar:
 
@@ -1043,25 +1032,86 @@
 
 ---
 
+## Infraestrutura em Código (IaC)
+
+- E o maior desafio é mudar a `cultura` e diminuir a curva de aprendizagem.
+
+- A `antiga` cultura é baseado no modelo `humano` para provisionar ambientes. E este movimento de infraestrutura como código (IaC) veio para mudar porque traz consigo a cultura `nova` onde tudo é versionado e automatizado eliminando clicks e mais clicks.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’32”](https://user-images.githubusercontent.com/46926951/230663676-0e5573af-ebae-4a63-b074-836f5be21de7.jpg)
+
+---
+
+#### Vantagens:
+
+- Provisionar recursos utilizando `scripts` é possível trazer a `infraestrutura` cada vez mais próxima do `desenvolvimento`. E também o desenvolvimento mais próximo da infraestrutura. E isso torna a cultura `DevOps` mais forte nos times da empresa.
+
+- Entrega de ambientes cada vez mais rápidos. A automação da `infra` através do `IaC`, acelera o processo de provisionamento tanto na criação de ambientes de desenvolvimento, de testes e até mesmo de produção.
+
+- Eliminação de documentos e manuais. A `infra` está no código.
+
+- A `infraestrutura` não fica dependente de `donos`. Até o `dev` pode escrever como precisa desta `infraestrutura`.
+
+- Podem ser criados `testes` sobre a infraestrutura.
+
+- A IaC pode ser adicionada nas Pipelines.
+
+---
+
+### Ferramentas
+
+- Scripts em `PowerShell` ou `Bash`.
+
+---
+
+### Ferramentas para a ação
+- Mais usadas são o `Terraform` ou `Ansible`
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’59” (2)](https://user-images.githubusercontent.com/46926951/230664046-16d1fc47-cf92-4fe2-9868-71c1fb8aa775.jpg)
+
+---
+
+#### ARM ( Azure Resource Manager )
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’24”](https://user-images.githubusercontent.com/46926951/230664286-242a5c04-2f83-4197-85cc-b628c7a128e2.jpg)
+
+---
+
+- Criação de scripts a partir do portal do próprio `Azure`.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’18”](https://user-images.githubusercontent.com/46926951/230666115-007815bb-784e-4196-807b-220a30d89a06.jpg)
+
+---
+
+### Ferramentas do ARM
+
+- Templates prontos que podem ser utilizados:
+
+[ Azure Resource Manager - Quick Starts - templates prontos ](azure.microsoft.com/pt-br/resources/templates)
+
+- Templates também podem ser criados no VSCode:
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’58”](https://user-images.githubusercontent.com/46926951/230667107-5aea8b29-c36e-4555-b7e5-d787dbaa199a.jpg)
+
+---
+
+- Com este plugin, é possível visualizar o ARM em formato de `diagrama`: 
+
+[ Plugin ARM Template Viewer - Plugin do Visual Studio Code ](marketplace.visualstudio.com/items?itemName=bencoleman.armview)
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’01”](https://user-images.githubusercontent.com/46926951/230666518-d6614cef-d7b6-4830-adf0-437dff68ab82.jpg)
+
+---
+
+- Plugin de autocomplete para criar os scripts:
+
+[Plugin Azure Resource Manager (ARM) Tools - auto-complete - Plugin do Visual Studio Code](marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
 
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’30” (1)](https://user-images.githubusercontent.com/46926951/230667837-3d3bd5e7-733d-4565-972a-99e8c9a319aa.jpg)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
