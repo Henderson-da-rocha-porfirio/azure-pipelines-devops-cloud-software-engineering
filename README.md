@@ -16,6 +16,7 @@
 - 11 - [ Deployment Patterns - Estratégias de implantação (deployment) ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#deployment-patterns---estrat%C3%A9gia-de-implanta%C3%A7%C3%A3o)
 - 12 - [ Kubernetes - k8s ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#kubernetes---k8s)
 - 13 - [ Infraestrutura em Código (IaC) ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#infraestrutura-em-c%C3%B3digo-iac)
+- 14 - [ Devops Databases ]()
 ---
 
 ### Muito mais que ferramenta, é cultura!
