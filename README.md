@@ -1,5 +1,8 @@
 # azure-pipelines-devops-cloud-software-engineering
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’07” (1)](https://user-images.githubusercontent.com/46926951/230672638-55823f08-0bdc-4c2d-91a9-9e97de4e0649.jpg)
+
+
 
 ---
 
@@ -16,7 +19,7 @@
 - 11 - [ Deployment Patterns - Estratégias de implantação (deployment) ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#deployment-patterns---estrat%C3%A9gia-de-implanta%C3%A7%C3%A3o)
 - 12 - [ Kubernetes - k8s ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#kubernetes---k8s)
 - 13 - [ Infraestrutura em Código (IaC) ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#infraestrutura-em-c%C3%B3digo-iac)
-- 14 - [ Devops Databases ]()
+- 14 - [ Devops Databases ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#devops-databases)
 ---
 
 ### Muito mais que ferramenta, é cultura!
@@ -1157,8 +1160,19 @@
 
 ## Devops Databases
 
+- Deve fazer parte da CD ( `entrega contínua` - continuos delivery )
 
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’02”](https://user-images.githubusercontent.com/46926951/230672077-0113c582-03d0-4974-b773-f05f0cdd4b42.jpg)
+
+
+---
+
+- Adicionar o banco de dados é super importante na esteira de DevOps:
+
+> O que é esteira em desenvolvimento?
+>
+> Uma esteira tradicional que segue os conceitos da agilidade é chamada de SDLC — sigla para Software Development Life Cycle, literalmente traduzido como `Ciclo de Vida de Desenvolvimento de Produto`.
 
 
 
