@@ -1113,6 +1113,61 @@
 
 ---
 
+#### Terraform
+
+- Ferramenta declarativa de provisionamento e orquestração de infra-estrutura que permite ao time automatizar o provisionamento de todos os aspectos de sua infraestrutura corporativa.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’36”](https://user-images.githubusercontent.com/46926951/230668455-b96e21da-40de-49b2-84b7-ac599adb7707.jpg)
+
+
+--- 
+
+
+- Baseado na nuvem e também com o primes. Ele pode ser utilizado também no `aws` e Google Cloud Plataform:
+
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’01”](https://user-images.githubusercontent.com/46926951/230668933-36f8976e-090b-4372-abf0-74b58fd38b26.jpg)
+
+
+---
+
+- Ele trabalha com todos os principais provedores de nuvem e permite automatizar a criação de recursos em vários provedores em paralelo, independente de onde residem os servidores físicos, os servidores de `DNS` ou o do `banco de dados`, e essa é a maior vantagem dessa ferramenta. Uma única ferramenta que pode ser utilizada com qualquer grande provedor da nuvem.
+
+
+- Pode fornecer qualquer aplicativos escritos em qualquer linguagem e seu uso é ainda mais simples que o ARM.
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’52”](https://user-images.githubusercontent.com/46926951/230669802-62910841-c824-48a3-9e4c-308662e557b2.jpg)
+
+
+---
+
+
+- Não oferece recursos de gerenciamento de configuração como outras ferramentas. Como por exemplo, o `Ansible`. Mas pode trabalhar lado-a-lado com elas.
+
+- A linguagem própria do Terraform é chamada de `hcl` ( sigla: hashicorp configuration language ). É uma linguagem `concisa` e `legível`( mais legível que o `json` usado no `arm`).
+
+- Com o `hcl` é possível `criar` e `descrever` toda a infraestrutura usando uma sintaxe declarativa.
+
+- Ele é `multi-provider`.
+
+- A curva de aprendizado é baixo.
+
+---
+
+## Devops Databases
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
