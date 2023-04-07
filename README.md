@@ -22,6 +22,7 @@
 - 14 - [ Devops Databases ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#devops-databases)
 - 15 - [ Usando o Flyway ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#flyway)
 - 16 - [ Ide's - para cloud e para o código local ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#ides)
+- 17 - [ Instalar o Azure CLI ]()
 ---
 
 ### Muito mais que ferramenta, é cultura!
@@ -1298,3 +1299,21 @@ flyway baseline
 
 ## Ide's
 
+- `Cloud`: [visual studio](https://visualstudio.microsoft.com/pt-br/downloads/)
+
+![image](https://user-images.githubusercontent.com/46926951/230676089-dc9a591d-3483-4084-a412-d25fcf093299.png)
+
+---
+
+- `Local`: [visual studio code](https://code.visualstudio.com/?wt.mc_id=vscom_downloads)
+
+
+![image](https://user-images.githubusercontent.com/46926951/230676307-bb0f5052-9670-4126-b216-2f1ef384bd5b.png)
+
+
+---
+
+
+## Instalar o Azure CLI
+
+[Instruções](https://learn.microsoft.com/pt-br/cli/azure/install-azure-cli-windows?view=azure-cli-latest&tabs=azure-cli)
