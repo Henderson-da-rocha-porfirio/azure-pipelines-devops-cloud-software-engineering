@@ -22,7 +22,7 @@
 - 14 - [ Devops Databases ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#devops-databases)
 - 15 - [ Usando o Flyway ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#flyway)
 - 16 - [ Ide's - para cloud e para o código local ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#ides)
-- 17 - [ Instalar o Azure CLI ]()
+- 17 - [ Instalar o Azure CLI ](https://github.com/Henderson-da-rocha-porfirio/azure-pipelines-devops-cloud-software-engineering#instalar-o-azure-cli)
 ---
 
 ### Muito mais que ferramenta, é cultura!
