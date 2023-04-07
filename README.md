@@ -1198,5 +1198,102 @@
 ## Flyway
 
 
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’30” (3)](https://user-images.githubusercontent.com/46926951/230674214-2376a6a1-0a77-4c2b-95c5-ef56f3068f4a.jpg)
 
+
+---
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-0’28”](https://user-images.githubusercontent.com/46926951/230673803-56e500ca-3172-4682-b189-f7623079b476.jpg)
+
+
+---
+
+- Banco de Dados suportados:
+
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-1’01” (1)](https://user-images.githubusercontent.com/46926951/230673950-bb9fa079-c47f-4173-a2c4-8b87ae0054da.jpg)
+
+
+---
+
+- Exemplo de Migração:
+
+````
+V1__MyfirstScript.sql
+````
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’30” (2)](https://user-images.githubusercontent.com/46926951/230674320-e0f2daa0-00d8-4cc6-8310-86c7a34036f6.jpg)
+
+
+---
+
+#### Comandos Flyway:
+
+````
+flyway info
+````
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’36”](https://user-images.githubusercontent.com/46926951/230674509-ad451b8f-48c5-41cd-837e-057b234717da.jpg)
+
+
+---
+
+````
+flyway migrate
+````
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’46”](https://user-images.githubusercontent.com/46926951/230674641-7c0614ac-0399-4456-89b2-75600b7d66bd.jpg)
+
+---
+
+
+
+````
+flyway clean
+````
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-2’58”](https://user-images.githubusercontent.com/46926951/230674752-8913ba73-4571-4999-b721-53ddef10a43f.jpg)
+
+
+
+````
+flyway validate
+````
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’25”](https://user-images.githubusercontent.com/46926951/230674955-99d9b148-5fef-495b-a751-1fe050cae24e.jpg)
+
+
+
+
+````
+flyway undo
+````
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’38”](https://user-images.githubusercontent.com/46926951/230675046-ffa92a39-24f8-4005-a6a8-e31cdb60af84.jpg)
+
+
+
+
+````
+flyway repair
+````
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-3’53”](https://user-images.githubusercontent.com/46926951/230675111-faac3cd1-b406-41ef-8903-b9c5b1afad20.jpg)
+
+
+
+
+````
+flyway baseline
+````
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-4’23”](https://user-images.githubusercontent.com/46926951/230675193-1bd51702-4d53-4923-b2ab-687fbd73a1a5.jpg)
+
+
+#### Tabela do Flyway e suas propriedades
+
+![VideoScreenshot--AzurePipelines-CICDDockereKubernetesnoAzureDevOpsUdemy-5’10”](https://user-images.githubusercontent.com/46926951/230675313-af3b81b2-ac29-41dd-af5b-e79a6909aba6.jpg)
+
+
+## Ide's
 
